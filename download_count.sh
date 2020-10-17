@@ -4,4 +4,8 @@
 # https://ftp.ncbi.nlm.nih.gov/pub/UniVec/UniVec_Core
 # follow that with steps which will count the number of sequences in the file (this is in the FASTA format)
 
-wget  https://ftp.ncbi.nlm.nih.gov/pub/UniVec/UniVec_Core
+curl -O https://ftp.ncbi.nlm.nih.gov/pub/UniVec/UniVec_Core
+grep -c "^>" UniVec_Core
+
+curl --no-progress-meter https://ftp.ncbi.nlm.nih.gov/pub/UniVec/UniVec_Core | grep -c "^>"
+

@@ -14,3 +14,5 @@ grep -v '^#' $FILENAME | cut -f3,7  | grep gene | sort | uniq -c
 # on some systems you can add --no-progress-meter on othes you can use -s or --silent and it will not print the download messages
 #curl -s $URL | grep -v ^# | cut -f3,7  | sort | uniq -c
 #curl -s $URL | grep -v ^# | cut -f3,7  | grep gene | sort | uniq -c
+
+# add a line
